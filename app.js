@@ -17,7 +17,7 @@ const addTextWatermarkToImage = async function (inputFile, outputFile, text) {
         console.log('Your file was created.');
         startAgain();
     } catch (error) {
-        console.log('Something went wrong.');
+        if (error) console.log('Something went wrong.');
     }
 };
 
@@ -36,7 +36,7 @@ const addImageWatermarkToImage = async function (inputFile, outputFile, watermar
         console.log('Your file was created.');
         startAgain();
     } catch (error) {
-        console.log('Something went wrong.');
+        if (error) console.log('Something went wrong.');
     }
 };
 
